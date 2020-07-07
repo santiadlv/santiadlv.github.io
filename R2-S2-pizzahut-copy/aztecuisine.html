@@ -4,12 +4,49 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="old-styles.css">
     <title>aztecuisine</title>
+    <style>
+      .top-right {
+        position: absolute;
+        top: 5px; right: 8px;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
   </head>
   <body>
-    <div class="">
+    <div class="content">
       <!-- Logo: https://i.pinimg.com/originals/99/17/3e/99173e9f9526858a3326abfeed163130.jpg -->
       <!-- Browser: https://i.stack.imgur.com/dIFkT.gif -->
       <!-- Template: https://thehistoryoftheweb.com/wp-content/uploads/2018/05/pizzanet-800x516.png -->
+      <form class="site" action="aztecuisine.html" method="post">
+          <label for="title">Document Title: </label>
+          <input type="text" name="doctitle" value="Welcome to AzteCuisine!">
+          <br>
+          <label for="url">Document URL: </label>
+          <input type="text" name="docurl" value="https://aztecuisine.com/en/">
+      </form>
+      <img class="top-right" src="https://i.stack.imgur.com/dIFkT.gif" alt="Browser Logo">
+      <hr>
+      <img src="https://i.pinimg.com/originals/99/17/3e/99173e9f9526858a3326abfeed163130.jpg" alt="AzteCuisine Logo">
+      <h1><b>Welcome to AzteCuisine!</b></h1>
+      <p>
+        This is AzteCuisine's Online Site. You can check out our menu, reserve a seat at any of our stores,
+        order food for either PickUp or Home Delivery, and even leave feedback!
+      </p>
+      <hr>
+      <p>
+        If you'd like to order, please provide the following information:
+      </p>
+      <form class="client" action="index.html" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" name="clientName" value=""><br>
+        <label for="address">Street Address:</label><br>
+        <input type="text" name="address" value=""><br>
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="text" name="phoneNumber" value="">
+        <label for="">(So we can contact you for delivery)</label><br><br>
+        <input type="submit" name="submitBttn" value="Continue with Order">
+      </form>
     </div>
   </body>
 </html>
