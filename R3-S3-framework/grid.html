@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="./styles.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>FDI - Verano 2020</title>
+    </head>
+    <body>
+      <nav>
+       <div class="nav-wrapper">
+         <a href="#!" class="brand-logo left-margin">Retos 2 y 3 - Semana 3</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!">Useless</a></li>
+            <li><a href="#!">Doesn't Work</a></li>
+            <li><a href="#!">Leads Nowhere</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col s12 m4 l3 grey lighten-2">
+          <p id="first-elem-side">This right here is a sidebar, where it can show options like these:</p>
+          <ul>
+            <li class="bulletpoint"><a href="#!">Click me</a></li>
+            <li class="bulletpoint"><a href="#!">I won't bite you</a></li>
+            <li class="bulletpoint"><a href="#!">Or will I?</a></li>
+            <li class="bulletpoint"><a href="#!">Just kidding... unless</a></li>
+            <li class="bulletpoint"><a href="#!">Alright enough tasteless sense of humor</a></li>
+          </ul>
+          <p class="top-bot-spacing">Still, we can have other things in this sidebar, such as buttons:</p>
+          <div class="center">
+            <a class='btn tooltipped waves-effect red' data-position="bottom" data-tooltip="I'm a button" href='#!'>Click me!</a>
+            <a class='btn tooltipped waves-effect green' data-position="bottom" data-tooltip="I'm a button" href='#!'>Click me!</a>
+            <a class='btn tooltipped waves-effect blue' data-position="bottom" data-tooltip="I'm a button" href='#!'>Click me!</a>
+          </div>
+          <p class="top-bot-spacing">Or even a collapsible menu that doesn't really do anything:</p>
+          <ul id="col-menu" class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+           </li>
+         </ul>
+        </div>
+        <div class="col s12 m8 l9 teal lighten-3">
+          <p style="font-size:20px;">On the other hand, this is where your main content will reside. It's way bigger than your typical sidebar, but still dynamic enough that its size will change depending on the screen size (responsiveness).</p>
+          <p style="font-size:20px;">Here, let me show you some of the biggest companies in the tech sector:</p>
+          <div class="carousel">
+           <a class="carousel-item" href="#one!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png"></a>
+           <a class="carousel-item" href="#two!"><img src="https://avelhafabrica.es/wp-content/uploads/2019/01/new-google-favicon-512.png"></a>
+           <a class="carousel-item" href="#three!"><img src="https://michollo.com/wp-content/uploads/2019/08/amazon_PNG27.png"></a>
+           <a class="carousel-item" href="#four!"><img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png"></a>
+           <a class="carousel-item" href="#five!"><img src="https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png"></a>
+          </div>
+          <br>
+          <div class="carousel-fixed-item center">
+            <a class="dropdown-trigger btn-large waves-effect yellow darken-2 black-text darken-text-2" data-target='dropdown1'>Choose one</a>
+            <ul id='dropdown1' class='dropdown-content'>
+             <li><a class="black-text" href="#!">Apple</a></li>
+             <li><a class="black-text" href="#!">Google</a></li>
+             <li><a class="black-text" href="#!">Amazon</a></li>
+             <li><a class="black-text" href="#!">Facebook</a></li>
+             <li><a class="black-text" href="#!">Tesla</a></li>
+           </ul>
+          </div>
+          <br>
+        </div>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+       });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+       });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+       });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems);
+       });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+       });
+
+      </script>
+    </body>
+  </html>
